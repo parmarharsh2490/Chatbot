@@ -1,0 +1,31 @@
+<p-button
+  [style]="{
+    position: 'fixed',
+    border: '0px',
+    bottom: '1rem',
+    right: '5rem',
+    width: '55px',
+    height: '55px',
+    'border-radius': '27.5px',
+    background: '#a17bf8',
+    'box-shadow': 'rgba(0, 0, 0, 0.2) 0px 4px 8px 0px',
+    cursor: 'pointer',
+    'z-index': '2147483645',
+    transition: '0.2s ease-in-out',
+    left: 'unset',
+  }"
+  (click)="onToggle()"
+>
+  <div
+    style="
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      z-index: 2147483646;
+    "
+  >
+    <i class="pi pi-comment" style="font-size: 2rem"></i>
+  </div>
+</p-button>

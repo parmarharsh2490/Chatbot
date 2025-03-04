@@ -1,0 +1,7 @@
+<p-button
+  *ngIf="status() == 'Start Call'"
+  (click)="startCall()"
+  label="Start Call"
+/>
+<p-button *ngIf="status() == 'End Call'" (click)="endCall()" label="End Call" />
+<p-button *ngIf="status() == 'Processing'" label="Processing" />
