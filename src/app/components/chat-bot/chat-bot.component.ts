@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { UserChatbotComponent } from '../user-chatbot/user-chatbot.component';
 import { ButtonModule } from 'primeng/button';
 import { VapiBtnComponent } from '../vapi-btn/vapi-btn.component';
 import { AiChatbotComponent } from '../chatbot/ai-chatbot/ai-chatbot.component';
+import { UserChatbotComponent } from '../chatbot/user-chatbot/user-chatbot.component';
 
 @Component({
   selector: 'app-chat-bot',

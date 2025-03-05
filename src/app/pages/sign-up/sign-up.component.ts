@@ -7,8 +7,7 @@ import { Form } from '../../shared/abstract/form.abstract';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-sign-in',
-  standalone: true,
+  selector: 'app-sign-up',
   imports: [
     CommonModule,
     InputTextModule,
@@ -17,15 +16,15 @@ import { RouterModule } from '@angular/router';
     ReactiveFormsModule,
     ButtonModule,
   ],
-  templateUrl: './sign-in.component.html',
-  styleUrl: './sign-in.component.css',
+  templateUrl: './sign-up.component.html',
+  styleUrl: './sign-up.component.css',
 })
-export class SignInComponent extends Form implements OnInit {
+export class SignUpComponent extends Form implements OnInit {
   ngOnInit() {
     this.loadGoogleLoginScript();
   }
 
   constructor() {
-    super('sign-in');
+    super('sign-up');
   }
 }

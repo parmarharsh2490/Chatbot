@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
-import { ChatLoaderComponent } from '../chatbot/chat-loader/chat-loader.component';
 import { InputTextModule } from 'primeng/inputtext';
+import { ChatLoaderComponent } from '../chat-loader/chat-loader.component';
 @Component({
   selector: 'app-user-chatbot',
   imports: [CommonModule, ChatLoaderComponent, InputTextModule],

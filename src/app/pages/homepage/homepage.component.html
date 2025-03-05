@@ -1,4 +1,7 @@
-<div class="absolute h-screen border flex w-screen items-center justify-center">
-  <app-vapi-btn></app-vapi-btn>
+<div class="absolute h-screen gap-5 border flex flex-col w-screen items-center justify-center">
+  <p-select [options]="agents" [(ngModel)]="selectedAgent" [loading]="loading" optionLabel="name" placeholder="Select Agent" class="max-w-56 mx-3 w-full md:w-56" />
+  <div class="w-full md:w-56 max-w-56 mx-3">
+    <app-vapi-btn></app-vapi-btn>
+  </div>
   <app-chat-bot></app-chat-bot>
 </div>

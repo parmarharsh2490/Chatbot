@@ -1,10 +1,28 @@
-import { Component } from '@angular/core';
 import { ChatBotComponent } from '../../components/chat-bot/chat-bot.component';
 import { VapiBtnComponent } from '../../components/vapi-btn/vapi-btn.component';
+import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { Select } from 'primeng/select';
+import { Agent } from '../../interface/agent';
 @Component({
   selector: 'app-homepage',
-  imports: [ChatBotComponent, VapiBtnComponent],
+  standalone : true,
+  imports: [ChatBotComponent, VapiBtnComponent,FormsModule,Select],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css',
 })
-export class HomepageComponent {}
+export class HomepageComponent implements OnInit{
+  agents: Agent[] | undefined;
+  loading: boolean = false;
+  selectedAgent: any | undefined;
+
+  ngOnInit() {
+      this.agents = [
+          { name: 'New York', id: 'NY' },
+          { name: 'Rome', id: 'RM' },
+          { name: 'London', id: 'LDN' },
+          { name: 'Istanbul', id: 'IST' },
+          { name: 'Paris', id: 'PRS' }
+      ];
+  }
+}

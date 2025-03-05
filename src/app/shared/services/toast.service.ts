@@ -1,8 +1,11 @@
-import { Directive } from '@angular/core';
 import { MessageService } from 'primeng/api';
-@Directive()
-export abstract class Toast {
-  constructor(private messageService: MessageService) {}
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class Toast {
+    constructor(private messageService :  MessageService){}
   showSuccessToast(message: string) {
     this.messageService.add({
       severity: 'success',

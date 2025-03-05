@@ -2,6 +2,7 @@
   *ngIf="status() == 'Start Call'"
   (click)="startCall()"
   label="Start Call"
+  styleClass="w-full"
 />
-<p-button *ngIf="status() == 'End Call'" (click)="endCall()" label="End Call" />
-<p-button *ngIf="status() == 'Processing'" label="Processing" />
+<p-button styleClass="w-full" *ngIf="status() == 'End Call'" (click)="endCall()" label="End Call" />
+<p-button styleClass="w-full" *ngIf="status() == 'Processing'" label="Processing" />
