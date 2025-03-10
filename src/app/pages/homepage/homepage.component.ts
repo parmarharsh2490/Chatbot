@@ -4,10 +4,11 @@ import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Select } from 'primeng/select';
 import { Agent } from '../../interface/agent';
+import { SidebarComponent } from "../../components/sidebar/sidebar.component";
 @Component({
   selector: 'app-homepage',
   standalone : true,
-  imports: [ChatBotComponent, VapiBtnComponent,FormsModule,Select],
+  imports: [ChatBotComponent, VapiBtnComponent, FormsModule, Select, SidebarComponent],
   templateUrl: './homepage.component.html',
   styleUrl: './homepage.component.css',
 })
